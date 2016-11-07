@@ -1,7 +1,7 @@
 {
   "name": "interpolate-regex",
   "version": "1.0.0",
-  "description": "",
+  "description": "Useful for basic templating by interpolating values into placeholders. Takes a left and right delimiter and returns a regex object for matching them and capturing the contents.",
   "keywords": [
     "interpolate",
     "interpolation",

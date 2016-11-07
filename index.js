@@ -1,6 +1,7 @@
 var esc = require('escape-string-regexp')
 
 var Regex = function (left, right, matchEmpty) {
+  matchEmpty = matchEmpty === false ? false : true
   var _ = matchEmpty ? '*' : '+'
   var l = esc(left)
   var r = esc(right)

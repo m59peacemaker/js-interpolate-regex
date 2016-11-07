@@ -1,6 +1,6 @@
 # interpolate-regex
 
-Function that takes a left and right delimiter and returns a regex object to match.
+Useful for basic templating by interpolating values into placeholders. Takes a left and right delimiter and returns a regex object for matching them and capturing the contents.
 
 ## install
 
@@ -26,4 +26,4 @@ const data = {place: 'world'}
 
 - `left: string` left delimiter
 - `right: string` right delimiter
-- `matchEmpty: boolean, false` match when there is nothing in between delimiters
+- `matchEmpty: boolean, true` match when there is nothing in between delimiters

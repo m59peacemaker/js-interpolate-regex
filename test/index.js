@@ -53,15 +53,21 @@ test('matches with ^[ ]', t => {
   t.end()
 })
 
-test('does not match empty by default', t => {
+test('matches empty by default', t => {
   const regex = Regex('{{', '}}')
-  t.equal('{{}}'.replace(regex, 'abc'), '{{}}')
+  t.equal('{{}}'.replace(regex, 'abc'), 'abc')
   t.end()
 })
 
 test('matches empty when matchEmpty = true', t => {
   const regex = Regex('{{', '}}', true)
   t.equal('{{}}'.replace(regex, 'abc'), 'abc')
+  t.end()
+})
+
+test('does not match empty when matchEmpty = false', t => {
+  const regex = Regex('{{', '}}', false)
+  t.equal('{{}}'.replace(regex, 'abc'), '{{}}')
   t.end()
 })
 
