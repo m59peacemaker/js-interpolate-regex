@@ -1,6 +1,6 @@
 {
   "name": "interpolate-regex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Useful for basic templating by interpolating values into placeholders. Takes a left and right delimiter and returns a regex object for matching them and capturing the contents.",
   "keywords": [
     "interpolate",
@@ -29,7 +29,7 @@
     "name": "Johnny Hauser",
     "email": "johnnyhauser@gmail.com"
   },
-  "license": "VOL",
+  "license": "CC0-1.0",
   "dependencies": {
     "escape-string-regexp": "^1.0.5"
   },
